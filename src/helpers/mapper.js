@@ -12,8 +12,11 @@ export const mapper = (cn, scrollTo, initPos, cb) => {
     var max_left_position = window_width - card_width;
     var object_position =
       (max_left_position * scroll_position) / document_height;
+
+    var mid_size_indicator = (0 + max_left_position) / 2;
+
     var rotation_degrees = (scroll_position / document_height) * 360;
-    cb(object_position, rotation_degrees);
+    cb(object_position, mid_size_indicator, rotation_degrees);
   }
   function bottomScroll() {
     const element = getElement(cn);

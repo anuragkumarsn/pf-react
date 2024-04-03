@@ -8,24 +8,6 @@ function App() {
     <div className="App">
       {/* <Routers /> */}
       <Home />
-      <div
-        style={{
-          border: "2px solid red",
-          width: "100%",
-          height: "100vh",
-          // zIndex: 100,
-        }}
-      ></div>
-
-      <div
-        style={{
-          border: "2px solid red",
-          width: "100%",
-          height: "100vh",
-          backgroundColor: "white",
-          zIndex: 100,
-        }}
-      ></div>
     </div>
   );
 }
